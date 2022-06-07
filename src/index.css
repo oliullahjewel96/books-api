@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Poppins:wght@400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .search {
@@ -33,4 +35,40 @@ body {
     justify-content: center;
     align-items: center;
     padding: 6px 10px;
+}
+
+.container {
+    margin: 20px 80px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-container {
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-container:hover {
+    transform: scale(1.05);
+}
+
+.book-container img {
+    height: 260px;
+    width: 260px;
+    border-radius: 10px;
+}
+
+.book-info h3 {
+    font-size: 20px;
+    font-weight: 600;
 }
