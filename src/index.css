@@ -72,3 +72,17 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
+
+.link-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    font-size: 10px;
+    background-color: rgb(130, 125, 125);
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+}

@@ -31,6 +31,12 @@ const Popularbooks = () => {
                   <div className="book-info">
                     <h3> {book.name} </h3>
                   </div>
+                  <div className="link-rating">
+                    <a href={book.url} rel="noreferrer" target="_blank">
+                      Read This Book
+                    </a>
+                    <span className="rating">{book.rating} / 5</span>
+                  </div>
                 </div>
               </div>
             </div>
