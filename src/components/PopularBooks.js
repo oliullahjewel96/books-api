@@ -22,26 +22,27 @@ const Popularbooks = () => {
         Most Popular Books{" "}
       </h1>
       <div className="container">
-        {popularBooks.map((book) => {
-          return (
-            <div key={book.book_id}>
-              <div className="books-container">
-                <div className="book-container">
-                  <img src={book.cover} alt="book" />
-                  <div className="book-info">
-                    <h3> {book.name} </h3>
-                  </div>
-                  <div className="link-rating">
-                    <a href={book.url} rel="noreferrer" target="_blank">
-                      Read This Book
-                    </a>
-                    <span className="rating">{book.rating} / 5</span>
+        {popularBooks &&
+          popularBooks.map((book) => {
+            return (
+              <div key={book.book_id}>
+                <div className="books-container">
+                  <div className="book-container">
+                    <img src={book.cover} alt="book" />
+                    <div className="book-info">
+                      <h3> {book.name} </h3>
+                    </div>
+                    <div className="link-rating">
+                      <a href={book.url} rel="noreferrer" target="_blank">
+                        Read This Book
+                      </a>
+                      <span className="rating">{book.rating} / 5</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
     </>
   );
